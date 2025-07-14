@@ -1,0 +1,63 @@
+.global-notification {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px 28px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.08);
+    animation: floatIn 0.4s ease, fadeAway 0.4s ease 2.6s;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+  }
+  
+  /* ✅ SUCCESS */
+  .global-notification.success {
+    background: linear-gradient(135deg, #e6fef1, #c2f2dd);
+    color: #087f5b;
+    box-shadow: 0 0 10px rgba(13, 148, 136, 0.2);
+  }
+  
+  /* ❌ ERROR */
+  .global-notification.error {
+    background: linear-gradient(135deg, #fff0f3, #ffc9d3);
+    color: #b00020;
+    box-shadow: 0 0 10px rgba(255, 82, 82, 0.2);
+  }
+  
+  /* ℹ️ INFO */
+  .global-notification.info {
+    background: linear-gradient(135deg, #f3efff, #e0d7ff);
+    color: #5b3cc4;
+    box-shadow: 0 0 10px rgba(103, 80, 164, 0.2);
+  }
+  
+  @keyframes floatIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-10px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes fadeAway {
+    from {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-5px) scale(0.95);
+    }
+  }
+  

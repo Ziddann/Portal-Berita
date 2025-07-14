@@ -1,0 +1,68 @@
+.edit-news-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+  }
+  
+  .edit-news-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #bb86fc;
+    text-align: center;
+  }
+  
+  .edit-news-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .edit-news-container input,
+  .edit-news-container textarea,
+  .edit-news-container select {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+  }
+  
+  .edit-news-container textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .edit-news-container select {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .edit-news-container button {
+    padding: 12px;
+    background: linear-gradient(135deg, #7b2ff7, #4c00b4);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-news-container button:hover {
+    background: linear-gradient(135deg, #9b4dff, #5d00db);
+    transform: scale(1.03);
+  }
+/* Styles/EditArticles.css */
+.preview-img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 12px;
+  border-radius: 8px;
+  object-fit: cover;
+}

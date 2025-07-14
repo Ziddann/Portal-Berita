@@ -1,0 +1,109 @@
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  color: white;
+  box-sizing: border-box;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid white;
+}
+
+.profile-content {
+  width: 100%;
+}
+
+.profile-content h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+.profile-submit-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #6c63ff, #8e44ad);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.profile-submit-button:hover {
+  opacity: 0.9;
+}
+
+.error-message-bottom {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(255, 0, 0, 0.08);
+  border-left: 4px solid #ff4d4d;
+  color: #ff4d4d;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}

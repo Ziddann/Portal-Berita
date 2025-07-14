@@ -1,0 +1,70 @@
+.create-news-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.create-news-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  color: #d6b4ff; /* ungu terang */
+}
+
+.create-news-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-news-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.create-news-form input,
+.create-news-form textarea,
+.create-news-form select {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.create-news-form input::placeholder,
+.create-news-form textarea::placeholder {
+  color: #aaa;
+}
+
+.create-news-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.create-news-form select {
+  background-color: rgba(255, 255, 255, 0.08);
+  appearance: none;
+  cursor: pointer;
+}
+
+.create-news-form button {
+  padding: 0.75rem;
+  background-color: #d6b4ff;
+  color: #0f0c29;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.create-news-form button:hover {
+  background-color: #b78eff;
+}

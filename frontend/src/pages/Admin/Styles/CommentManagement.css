@@ -1,0 +1,42 @@
+.admin-comments {
+    padding: 20px;
+    color: white;
+  }
+  
+  .comments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .comments-table th, .comments-table td {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+  }
+  
+  .comments-table th {
+    background-color: #2c2c40;
+  }
+  
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .delete-btn {
+    background-color: #c0392b;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e74c3c;
+  }
+  

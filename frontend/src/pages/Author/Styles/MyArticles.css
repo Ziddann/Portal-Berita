@@ -1,0 +1,67 @@
+.my-articles {
+    margin-top: 20px;
+  }
+  
+  .my-articles h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styling */
+  .my-articles table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ffffff;
+  }
+  
+  .my-articles th,
+  .my-articles td {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .my-articles th {
+    background: rgba(138, 43, 226, 0.3); /* ungu biru transparan */
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .my-articles td {
+    color: #e0e0e0;
+  }
+  
+  /* Action Buttons */
+  .my-articles button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #7b2ff7, #4c00b4);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .my-articles button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #9b4dff, #5d00db);
+  }
+  
+  .my-articles em {
+    font-style: italic;
+    color: #cccccc;
+    font-size: 14px;
+  }
+  
+  .rejected-info {
+    color: #ff4d4d;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+  }

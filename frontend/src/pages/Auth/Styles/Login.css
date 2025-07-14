@@ -1,0 +1,236 @@
+/* Login.css */
+
+/* Latar belakang dengan gradien */
+.login-page {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Kontainer utama untuk layout dua kolom */
+.login-container {
+  display: flex;
+  justify-content: space-between; /* Menyusun elemen ke kanan */
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  height: 90%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Kolom kiri untuk deskripsi */
+.left-column {
+  width: 45%;
+  color: white;
+  padding: 20px;
+}
+
+.left-column h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.left-column p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Tombol fitur */
+.features {
+  display: flex;
+  margin-top: 20px;
+}
+
+.feature {
+  background-color: #fff;
+  color: #8e44ad;
+  padding: 12px 25px;
+  margin-right: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Kotak login */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+}
+
+/* Judul di dalam kotak login */
+.login-box h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Label untuk input */
+.login-box label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #bbb;
+}
+
+/* Gaya inputan */
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.login-box input[type="email"]:focus,
+.login-box input[type="password"]:focus {
+  border-color: #6c63ff;
+}
+
+/* Tombol Masuk */
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: linear-gradient(45deg, #6c63ff, #8e44ad);
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  opacity: 0.9;
+}
+
+/* Tautan Lupa Password */
+.login-box .forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-box .forgot-password a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.login-box .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Tautan Register */
+.login-box .register-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-box .register-link a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.login-box .register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Login dengan Google dan Facebook */
+.login-box .social-login {
+  margin-top: 20px;
+}
+
+.login-box .social-button {
+  width: 100%;
+  padding: 14px;
+  margin: 5px 0;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+}
+
+.login-box .google {
+  background-color: #db4437;
+  color: white;
+}
+
+.login-box .facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.login-box .social-button:hover {
+  opacity: 0.9;
+}
+
+/* Styling untuk checkbox */
+.login-box .checkbox {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.login-box .checkbox input {
+  margin-right: 10px;
+}
+
+.login-box .checkbox label {
+  font-size: 14px;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .login-box {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .login-box h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.error-message-bottom {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(255, 0, 0, 0.08);
+  border-left: 4px solid #ff4d4d;
+  color: #ff4d4d;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

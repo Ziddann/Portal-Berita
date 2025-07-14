@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+    .sidebar-toggle {
+      display: block;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-right {
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  
+    .navbar-right.open {
+      display: flex;
+    }
+  
+    .search-input {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  
+    .nav-item,
+    .dropdown-toggle {
+      text-align: left;
+      padding: 0.4rem 1rem;
+      width: 100%;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      background-color: #fff;
+      border-radius: 0;
+    }
+  
+    .dropdown-item {
+      width: 100%;
+      padding: 0.4rem 1rem;
+    }
+  }
+  

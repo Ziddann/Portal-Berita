@@ -1,0 +1,75 @@
+.dashboard-overview {
+    margin-bottom: 40px;
+    width: 100%;
+    flex: none ; 
+  }
+  
+  .dashboard-overview h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .overview-stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .stat-item {
+    width: 20%; /* dari 22%, dibuat lebih ramping */
+    min-width: 160px; /* jaga jangan terlalu kecil di layar kecil */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    min-height: 120px;
+  }
+  
+  
+  
+
+  
+  .stat-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .stat-item p {
+    font-size: 16px;
+    color: #ddd;
+  }
+  .stat-item:hover {
+    transform: translateY(-4px);
+  }  
+  .quick-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px; /* tambahkan ini agar ada jarak dari .overview-stats */
+  }
+  
+  .quick-action-btn {
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .quick-action-btn:hover {
+    background: #fff;
+    color: #000;
+  }
+  
