@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import TrendingSection from './NewsComponent/TrendingSection';
 import KategoriSection from './NewsComponent/KategoriSection';
 import BeritaTerbaru from './NewsComponent/BeritaTerbaru';
-import NewsCard from './NewsComponent/NewsCard';
+import AllNews from './NewsComponent/AllNews';
 import Footer from '../components/Footer';
 
 import './Home.css'
@@ -17,7 +17,7 @@ const Home = () => {
         <TrendingSection />
         <KategoriSection />
         <BeritaTerbaru />
-        <NewsCard />
+        <AllNews />
       </div>
 
       <Footer />
