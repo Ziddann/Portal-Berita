@@ -4,7 +4,7 @@ import axios from "axios";
 import { useCommentAction } from "./hook/useCommentActions";
 import "./Styles/CommentSection.css";
 import ReportButton from "../../components/ReportButton";
-import { useNotification } from "../../components/notification";
+import { useNotification } from "../../components/Notification";
 
 function CommentSection({ newsId, userId }) {
   const [comments, setComments] = useState([]);
