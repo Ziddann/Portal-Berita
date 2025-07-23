@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useReport } from "../pages/NewsDetail/hook/useReport";
 import ModalPortal from "./ModalPortal";
 import LoadingOverlay from "./LoadingOverlay";
-import { useNotification } from "./notification";
+import { useNotification } from "./Notification";
 import "./Styles/ReportButton.css";
 
 function ReportButton({ userId, targetType, targetId }) {
