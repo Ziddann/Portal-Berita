@@ -2,7 +2,7 @@ import config from '../../config';
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
-import './styles/KategoriSection.css';
+import './Styles/KategoriSection.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 

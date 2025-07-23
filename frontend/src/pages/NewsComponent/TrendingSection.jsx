@@ -1,7 +1,7 @@
 import config from '../../config';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './styles/TrendingSection.css';
+import './Styles/TrendingSection.css';
 
 function TrendingSection() {
   const [trendingNews, setTrendingNews] = useState([]);
