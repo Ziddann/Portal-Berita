@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 import NewsSection from "./NewsSection";
 import CommentSection from "./CommentSection";
 
-import "./styles/NewsDetail.css";
+import "./Styles/NewsDetail.css";
 
 const NewsDetail = () => {
   const { id } = useParams();
