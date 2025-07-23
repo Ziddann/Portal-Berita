@@ -1,7 +1,7 @@
 import config from '../../config';
 import React, { useEffect, useState } from 'react';
 import './Styles/ContentManagement.css';
-import { useNotification } from '../../components/notification';
+import { useNotification } from '../../components/Notification';
 import LoadingOverlay from '../../components/LoadingOverlay';
 
 function ContentManagement() {
