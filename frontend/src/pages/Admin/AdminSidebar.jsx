@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import ModalPortal from '../../components/ModalPortal';
 import LoadingOverlay from '../../components/LoadingOverlay';
-import { useNotification } from '../../components/notification';
+import { useNotification } from '../../components/Notification';
 import './Styles/AdminSidebar.css';
 
 function AdminSidebar() {
