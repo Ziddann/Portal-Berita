@@ -9,7 +9,7 @@ import Footer from '../../components/Footer';
 import LoadingOverlay from '../../components/LoadingOverlay';
 import { useNotification } from '../../components/Notification';
 
-import './styles/Profile.css';
+import './Styles/Profile.css';
 
 function Profile() {
   const [userData, setUserData] = useState({

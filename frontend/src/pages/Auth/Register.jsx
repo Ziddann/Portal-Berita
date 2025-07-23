@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import LoadingOverlay from '../../components/LoadingOverlay';
 import { useNotification } from '../../components/Notification'; // ✅
-import './styles/Register.css';
+import './Styles/Register.css';
 
 function Register() {
   const [form, setForm] = useState({

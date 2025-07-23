@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import LoadingOverlay from '../../components/LoadingOverlay';
 import { useNotification } from '../../components/Notification';
-import './styles/Login.css';
+import './Styles/Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
