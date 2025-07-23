@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import SearchBar from './SearchBar';
-import { useNotification } from './notification';
+import { useNotification } from './Notification';
 import LoadingOverlay from './LoadingOverlay';
 import './Styles/Navbar.css';
 import './Styles/Sidebar.css';
