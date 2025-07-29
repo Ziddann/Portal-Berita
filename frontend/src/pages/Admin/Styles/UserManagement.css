@@ -1,81 +1,83 @@
 .user-management {
-    padding: 24px;
-    color: white;
-    width: 100%;
-  }
-  
-  .user-management h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .user-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.03);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  
+  padding: 24px;
+  color: #4e342e; /* Coklat tua */
+  width: 100%;
+  background-color: #fdfaf6; /* Putih krem lembut */
+}
+
+.user-management h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3e2723;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fffaf4; /* Putih krem */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(160, 120, 90, 0.1);
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(120, 80, 50, 0.2);
+}
+
+.user-table th {
+  background-color: #efebe9; /* Coklat sangat muda */
+  font-weight: 600;
+  font-size: 15px;
+  color: #3e2723;
+}
+
+.user-table td {
+  background-color: #fffdf9;
+  font-size: 14px;
+  color: #5d4037; /* Coklat sedang */
+}
+
+.user-table tr:hover td {
+  background-color: #fceee3;
+}
+
+.user-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #a1887f; /* Coklat medium */
+  color: white;
+  transition: all 0.2s ease;
+  margin-right: 6px;
+}
+
+.user-table button:hover {
+  background-color: #8d6e63; /* Coklat hover */
+  color: #fff;
+}
+
+.user-table select {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #d7ccc8; /* Coklat abu muda */
+  color: #3e2723;
+}
+
+@media (max-width: 768px) {
   .user-table th,
   .user-table td {
-    padding: 12px 16px;
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    padding: 10px;
   }
-  
-  .user-table th {
-    background-color: rgba(255, 255, 255, 0.08);
-    font-weight: 600;
-    font-size: 15px;
+
+  .user-management h2 {
+    font-size: 22px;
   }
-  
-  .user-table td {
-    background-color: rgba(255, 255, 255, 0.02);
-    font-size: 14px;
-    color: #ddd;
-  }
-  
-  .user-table tr:hover td {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  
-  .user-table button {
-    padding: 6px 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    transition: all 0.2s ease;
-    margin-right: 6px;
-  }
-  
-  .user-table button:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .user-table select {
-    padding: 5px 10px;
-    border-radius: 6px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-  }
-  
-  @media (max-width: 768px) {
-    .user-table th,
-    .user-table td {
-      font-size: 13px;
-      padding: 10px;
-    }
-  
-    .user-management h2 {
-      font-size: 22px;
-    }
-  }
-  
+}

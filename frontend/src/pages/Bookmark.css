@@ -1,13 +1,6 @@
-body {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  color: #fff;
-  font-family: Arial, sans-serif;
-}
-
-
 .bookmark-hero {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  color: #fff;
+  background: linear-gradient(135deg, #f0e6d2, #e0cdb2);
+  color: #4b3f2f;
   padding: 2.5rem 1rem;
   text-align: center;
   border-radius: 0 0 12px 12px;
@@ -16,10 +9,11 @@ body {
 .bookmark-title {
   font-size: 2.2rem;
   margin: 0;
+  color: #3b2f23;
 }
 
 .bookmark-subtitle {
-  color: #ccc;
+  color: #6f5c48;
   margin-top: 0.5rem;
   font-size: 1rem;
 }
@@ -42,28 +36,28 @@ body {
 /* Filter buttons */
 .filter {
   padding: 0.4rem 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(120, 80, 40, 0.1);
+  border: 1px solid rgba(100, 70, 30, 0.2);
   border-radius: 20px;
   cursor: pointer;
-  color: #fff;
+  color: #4b3f2f;
   font-size: 0.85rem;
   transition: all 0.3s ease;
 }
 
 .filter.active,
 .filter:hover {
-  background: #fff;
-  color: #0f0c29;
+  background: #4b3f2f;
+  color: #fff;
 }
 
 /* Dropdown */
 .sort-select {
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  border: 1px solid rgba(100, 70, 30, 0.3);
+  background: rgba(240, 220, 200, 0.5);
+  color: #4b3f2f;
   font-size: 0.9rem;
   appearance: none;
 }
@@ -78,23 +72,23 @@ body {
 /* Card */
 .bookmark-card {
   display: flex;
-  background: #1c1c2b;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #fdf8f2;
+  border: 1px solid #e0d4c0;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(80, 60, 40, 0.15);
   transition: box-shadow 0.3s ease;
 }
 
 .bookmark-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(80, 60, 40, 0.25);
 }
 
 .bookmark-image img {
   width: 160px;
   height: 100%;
   object-fit: cover;
-  background: #444;
+  background: #d6c4b2;
 }
 
 .bookmark-info {
@@ -106,8 +100,8 @@ body {
 
 /* Tag kategori */
 .bookmark-category {
-  background: #fff;
-  color: #0f0c29;
+  background: #d9c2a3;
+  color: #3b2f23;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
   font-size: 0.7rem;
@@ -118,7 +112,7 @@ body {
 }
 
 .bookmark-date {
-  color: #aaa;
+  color: #8b6f55;
   font-size: 0.8rem;
   margin-bottom: 0.4rem;
 }
@@ -127,27 +121,27 @@ body {
   font-size: 1.1rem;
   margin-bottom: 0.4rem;
   font-weight: bold;
-  color: #fff;
+  color: #3b2f23;
 }
 
 .bookmark-description {
   font-size: 0.95rem;
-  color: #ddd;
+  color: #4b3f2f;
   margin-bottom: 0.6rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .bookmark-meta {
   font-size: 0.8rem;
-  color: #aaa;
+  color: #8b6f55;
   margin-bottom: auto;
 }
 
 /* Tombol Read More */
 .read-more {
   margin-top: 0.8rem;
-  background: #fff;
-  color: #0f0c29;
+  background: #d9c2a3;
+  color: #3b2f23;
   padding: 0.4rem 1rem;
   border: none;
   border-radius: 6px;
@@ -159,8 +153,8 @@ body {
 }
 
 .read-more:hover {
-  background: #ddd;
-  color: #000;
+  background: #c7ac8c;
+  color: #fff;
 }
 
 /* Pagination */
@@ -174,9 +168,9 @@ body {
 
 .pagination-btn {
   padding: 0.4rem 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  border: 1px solid rgba(120, 80, 40, 0.2);
+  background: rgba(120, 80, 40, 0.1);
+  color: #4b3f2f;
   border-radius: 6px;
   font-size: 0.9rem;
   cursor: pointer;
@@ -185,6 +179,6 @@ body {
 
 .pagination-btn.active,
 .pagination-btn:hover {
-  background: #fff;
-  color: #0f0c29;
+  background: #4b3f2f;
+  color: #fff;
 }

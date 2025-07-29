@@ -8,7 +8,6 @@ const pool = require('../db');  // Mengimpor pool untuk koneksi MySQL
 router.post('/register', async (req, res) => {
   const { name, email, password, role } = req.body;
   const adminEmail = 'admin@example.com';
-
   try {
     // Cek apakah email sudah terdaftar
     const [results] = await pool.query('SELECT * FROM users WHERE email = ?', [email]);

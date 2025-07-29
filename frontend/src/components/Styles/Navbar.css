@@ -2,20 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, rgba(15, 12, 41, 0.8), rgba(48, 43, 99, 0.8), rgba(36, 36, 62, 0.8));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* support Safari */
-  color: white;
+  background-color: #FFFDF7; /* krem hangat */
+  color: #3E3E3E;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* opsional, buat nuansa glassmorphism */
+  border-bottom: 1px solid #EADBC8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-
-
-.navbar-left{
+.navbar-left {
   align-items: center;
 }
 
@@ -25,7 +22,7 @@
 }
 
 .logo-link {
-  color: white;
+  color: #C1440E; /* aksen utama */
   font-weight: bold;
   text-decoration: none;
   margin-left: 0.5rem;
@@ -34,21 +31,25 @@
 
 .nav-item {
   margin-left: 1rem;
-  color: white;
+  color: #3E3E3E;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #B2360D;
 }
 
 .sidebar-toggle {
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: white;
+  color: #C1440E;
   cursor: pointer;
   margin-right: 0.5rem;
 }
 
-
-/* Styling umum untuk dropdown menu */
+/* Dropdown umum */
 .dropdown {
   position: relative;
 }
@@ -57,45 +58,45 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFF9F0;
+  border: 1px solid #EADBC8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   width: 160px;
   z-index: 10;
   padding: 0.5rem 0;
+  border-radius: 8px;
 }
 
 .dropdown-item {
   display: block;
-  padding: 10px;
-  color: #333;
+  padding: 10px 16px;
+  color: #3E3E3E;
   text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
 }
 
 .dropdown-item:hover {
-  background-color: #f0f0f0;
+  background-color: #FCEFD9;
 }
 
 .dropdown-item:active {
-  background-color: #ddd;
+  background-color: #EADBC8;
 }
 
-/* Styling khusus untuk gambar avatar */
-/* Styling untuk dropdown menu user */
+/* Dropdown user */
 .user-dropdown {
   position: relative;
 }
 
-
 .user-dropdown .dropdown-menu {
-  position: absolute;
-  top: 50px; /* Sesuaikan posisi dropdown */
+  top: 50px;
   right: 0;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFF9F0;
+  border: 1px solid #EADBC8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   width: 180px;
-  z-index: 10;
   padding: 10px 0;
   border-radius: 8px;
   display: flex;
@@ -105,10 +106,9 @@
 .user-dropdown .dropdown-item {
   display: block;
   padding: 12px 16px;
-  color: #333;
+  color: #3E3E3E;
   text-decoration: none;
   font-size: 14px;
-  border: none;
   background-color: transparent;
   text-align: left;
   transition: background-color 0.2s ease;
@@ -116,16 +116,15 @@
 }
 
 .user-dropdown .dropdown-item:hover {
-  background-color: #f0f0f0;
+  background-color: #FCEFD9;
 }
 
 .user-dropdown .dropdown-item:active {
-  background-color: #ddd;
+  background-color: #EADBC8;
 }
 
-/* Styling khusus untuk tombol logout */
 .user-dropdown .logout-button {
-  background-color: #ff4d4d;
+  background-color: #C1440E;
   color: white;
   border: none;
   padding: 12px 16px;
@@ -137,37 +136,50 @@
   margin-top: 8px;
 }
 
+.user-dropdown .logout-button:hover {
+  background-color: #B2360D;
+}
 
-
-/* Styling untuk dropdown pada kategori */
+/* Kategori nav dropdown */
 .nav-item.dropdown-toggle {
   cursor: pointer;
   padding: 10px 15px;
   font-weight: bold;
+  color: #C1440E; /* Warna aksen hangat */
+  background-color: #FFFDF7; /* Background terang */
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-item.dropdown-toggle:hover {
+  background-color: #F5EAD8; /* Hover hangat */
+  color: #B2360D;
 }
 
 
-
+/* Search bar */
 .search-input {
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
-  border: none;
+  border: 1px solid #EADBC8;
   outline: none;
   width: 180px;
   font-size: 0.9rem;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, box-shadow 0.2s ease;
+  background-color: #FFFDF7;
+  color: #3E3E3E;
 }
 
 .search-input:focus {
   width: 250px;
-  box-shadow: 0 0 8px rgba(255, 165, 0, 0.7);
+  box-shadow: 0 0 8px rgba(193, 68, 14, 0.3); /* efek hangat */
 }
 
 .search-input::placeholder {
-  color: #ccc;
+  color: #A88F75;
 }
 
-/* Menambahkan styling untuk foto profil pengguna */
+/* Avatar styling */
 .user-avatar {
   display: flex;
   align-items: center;
@@ -188,15 +200,7 @@
   gap: 8px;
 }
 
-.avatar-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .user-name {
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: #3E3E3E;
 }
-

@@ -1,126 +1,134 @@
 .content-management {
-    margin-top: 30px;
-  }
-  
-  .content-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    color: white;
-  }
-  
-  .content-table th,
-  .content-table td {
-    padding: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: left;
-  }
-  
-  .content-table th {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  
-  .content-table td {
-    background: rgba(255, 255, 255, 0.05);
-  }
-  
-  .content-table button {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  
-  .content-table button:hover {
-    background: #fff;
-    color: #000;
-  }
- 
-  /* Modal Overlay */
+  margin-top: 30px;
+  color: #3a2e25; /* warna teks utama */
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #3a2e25;
+  font-family: 'Georgia', serif;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px;
+  border: 1px solid #e0d4c1;
+  text-align: left;
+}
+
+.content-table th {
+  background: #eaddcf;
+  color: #3a2e25;
+  font-weight: bold;
+}
+
+.content-table td {
+  background: #fefcf9;
+}
+
+.content-table button {
+  background: #c8b6a6;
+  color: #3a2e25;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.content-table button:hover {
+  background: #bca18c;
+  color: white;
+}
+
+/* Modal Overlay */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  .content-management button {
-    padding: 8px 16px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-right: 8px;
-    transition: background 0.3s, color 0.3s, transform 0.2s;
-  }
-  
-  .content-management button:hover {
-    background: #fff;
-    color: #000;
-    transform: scale(1.02);
-  }
-   
-  /* Modal Box */
-  .modal {
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    padding: 20px;
-    width: 450px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  }
-  
-  /* Modal Form Fields */
-  .modal label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .modal input,
-  .modal textarea,
-  .modal select {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    margin-bottom: 15px;
-    background: rgba(255,255,255,0.1);
-    color: white;
-    border-radius: 6px;
-    font-size: 14px;
-    outline: none;
-  }
-  
-  /* Modal Action Buttons */
-  .modal-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .modal-actions button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background: #5c5cd6;
-    color: white;
-    font-weight: bold;
-    transition: background 0.2s ease;
-  }
-  
-  .modal-actions button:hover {
-    background: #3d3da8;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 46, 37, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.content-management button {
+  padding: 8px 16px;
+  background: #d8c3ac;
+  color: #3a2e25;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  font-weight: 500;
+}
+
+.content-management button:hover {
+  background: #b4977d;
+  color: white;
+  transform: scale(1.02);
+}
+
+/* Modal Box */
+.modal {
+  background: #fdf7f1;
+  padding: 20px;
+  width: 450px;
+  border-radius: 10px;
+  color: #3a2e25;
+  box-shadow: 0 0 20px rgba(58, 46, 37, 0.2);
+  font-family: 'Georgia', serif;
+}
+
+/* Modal Form Fields */
+.modal label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d5c4b1;
+  margin-bottom: 15px;
+  background: #fffaf4;
+  color: #3a2e25;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Georgia', serif;
+}
+
+/* Modal Action Buttons */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #a67c52;
+  color: white;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.modal-actions button:hover {
+  background: #805c3d;
+}

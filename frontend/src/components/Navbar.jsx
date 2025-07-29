@@ -125,7 +125,7 @@ function Navbar({ onSearch }) {
               )}
 
               <div className="dropdown user-dropdown" onClick={toggleUserDropdown}>
-                <img src={profileImage} alt="👤" className="avatar-img" />
+                <img src={profileImage} alt="" className="avatar-img" />
                 {userDropdownOpen && (
                   <div className="dropdown-menu">
                     <Link to="/profile" className="dropdown-item">Profile</Link>

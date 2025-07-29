@@ -4,18 +4,17 @@
   align-items: center;
   padding: 20px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-color: #FAF9F7;
 }
 
 .register-box {
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  background-color: #ffffff;
   padding: 36px 40px;
   border-radius: 15px;
   width: 100%;
   max-width: 420px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  color: #4E342E;
   text-align: center;
   box-sizing: border-box;
 }
@@ -28,12 +27,13 @@
 .register-title {
   font-size: 28px;
   font-weight: bold;
+  color: #4E342E;
 }
 
 .register-subtitle {
   font-size: 14px;
   margin-bottom: 20px;
-  color: #bbb;
+  color: #7B5E57;
 }
 
 .register-form-title {
@@ -44,7 +44,7 @@
 .register-form-desc {
   font-size: 14px;
   margin-bottom: 20px;
-  color: #bbb;
+  color: #7B5E57;
 }
 
 .register-input {
@@ -52,15 +52,21 @@
   padding: 12px;
   margin: 10px 0;
   border-radius: 8px;
-  border: 1px solid #555;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+  border: 1px solid #D7CCC8;
+  background-color: #FFF;
+  color: #4E342E;
   font-size: 14px;
   box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.register-input:focus {
+  border-color: #6D4C41;
+  outline: none;
 }
 
 .register-input::placeholder {
-  color: #ccc;
+  color: #A1887F;
 }
 
 .register-checkbox-group {
@@ -69,13 +75,13 @@
   justify-content: flex-start;
   font-size: 12px;
   margin: 10px 0;
-  color: #ccc;
+  color: #5D4037;
   gap: 8px;
   text-align: left;
 }
 
 .register-checkbox-group a {
-  color: #6c63ff;
+  color: #8D6E63;
   text-decoration: none;
 }
 
@@ -87,31 +93,33 @@
   width: 100%;
   padding: 12px;
   margin-top: 15px;
-  background: linear-gradient(45deg, #6c63ff, #8e44ad);
+  background: #6D4C41;
   border: none;
   color: white;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .register-button:hover {
-  opacity: 0.9;
+  background-color: #5D4037;
 }
 
 .register-divider {
   margin: 20px 0;
-  color: #bbb;
+  color: #A1887F;
   font-size: 14px;
 }
 
 .register-login-link {
   margin-top: 15px;
   font-size: 14px;
+  color: #5D4037;
 }
 
 .register-login-link a {
-  color: #6c63ff;
+  color: #8D6E63;
   text-decoration: none;
 }
 
@@ -123,16 +131,16 @@
   margin-top: 14px;
   padding: 10px 14px;
   border-radius: 8px;
-  background: rgba(255, 0, 0, 0.08);
-  border-left: 4px solid #ff4d4d;
-  color: #ff4d4d;
+  background: rgba(160, 50, 50, 0.06);
+  border-left: 4px solid #C62828;
+  color: #C62828;
   font-size: 14px;
   font-weight: 500;
-  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(198, 40, 40, 0.1);
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Simple fade animation */
+/* Fade animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

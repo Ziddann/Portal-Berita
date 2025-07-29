@@ -1,13 +1,14 @@
 .recent-reports-section {
   margin-top: 30px;
   padding: 0 10px;
+  color: #3e2723;
 }
 
 .recent-reports-section h3 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #3e2723;
 }
 
 .report-overview-grid {
@@ -18,13 +19,12 @@
 
 .report-box {
   flex: 1 1 calc(25% - 20px);
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(6px);
+  background: #f5eee6;
   border-radius: 12px;
   padding: 16px;
-  color: #fff;
+  color: #3e2723;
   min-width: 220px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(94, 72, 60, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   display: flex;
@@ -34,27 +34,26 @@
 
 .report-box:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(94, 72, 60, 0.15);
 }
 
 .report-box strong {
   font-size: 16px;
   display: block;
   margin-bottom: 6px;
-  color: #ffffff;
+  color: #3e2723;
 }
 
 .report-box p {
   font-size: 14px;
-  color: #ccc;
+  color: #5d4037;
   margin-bottom: 6px;
   line-height: 1.5;
 }
 
-/* Catatan terakhir (biar selalu di bawah dan beda warna) */
 .report-box p:last-of-type {
   font-style: italic;
-  color: #aaa;
+  color: #795548;
   margin-top: auto;
   font-size: 13px;
 }
@@ -63,7 +62,7 @@
 .modal-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,13 +70,13 @@
 }
 
 .modal {
-  background: #1e1e2f;
+  background: #fdfaf6;
   padding: 24px;
   border-radius: 12px;
   width: 420px;
   max-width: 90%;
-  color: white;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  color: #3e2723;
+  box-shadow: 0 8px 30px rgba(94, 72, 60, 0.2);
 }
 
 .modal h4 {
@@ -108,20 +107,21 @@
 }
 
 .modal-actions button:nth-child(1) {
-  background: #555;
-  color: #fff;
+  background: #a1887f;
+  color: white;
 }
 
 .modal-actions button:nth-child(2) {
-  background: #d33;
-  color: #fff;
+  background: #c62828;
+  color: white;
 }
 
 .modal-actions button:nth-child(3) {
-  background: #aaa;
-  color: #000;
+  background: #d7ccc8;
+  color: #3e2723;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
   .report-box {
     flex: 1 1 calc(50% - 20px);

@@ -1,145 +1,118 @@
 .admin-sidebar {
-    width: 250px;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    color: white;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
-  .sidebar-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .admin-user-dropdown {
-    text-align: center;
-    cursor: pointer;
-    margin-bottom: 30px;
-  }
-  
-  .admin-user-dropdown .avatar-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-  }
-  
-  .admin-user-dropdown .user-name {
-    display: block;
-    font-weight: bold;
-    margin-top: 5px;
-    color: #fff;
-  }
-  
-  .dropdown-menu {
-    background: linear-gradient(135deg, #0f0c29cc, #302b63cc, #24243ecc);
-    backdrop-filter: blur(12px);
-    padding: 12px;
-    border-radius: 10px;
-    width: 160px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
-  }
-  
-  .dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    color: #ffffff;
-    text-align: left;
-    text-decoration: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.2s, transform 0.2s;
-    font-weight: 500;
-  }
-  
-  .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  
-  
-  .dropdown-item:last-child {
-    border-bottom: none;
-  }
-  
-  .sidebar-menu {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 30px;
-  }
-  
-  .sidebar-menu li {
-    margin: 12px 0;
-  }
-  
-  .sidebar-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.2s ease;
-  }
-  
-  .sidebar-menu li a:hover {
-    color: #ddd;
-  }
-  
-  .admin-sidebar button {
-    background: none;
-    border: none;
-    color: inherit;
-    font: inherit;
-    padding: 0;
-    cursor: pointer;
-    text-align: left;
-    width: 100%;
-  }
-  
-  .admin-sidebar button:hover {
-    text-decoration: underline;
-  }
-  
-  .admin-about-quote {
-    margin-top: auto;
-    padding: 15px;
-    font-style: italic;
-    color: #ddd;
-    background: rgba(255,255,255,0.05);
-    border-left: 4px solid #bb86fc;
-    border-radius: 6px;
-    font-size: 14px;
-    line-height: 1.5;
-  }
+  width: 250px;
+  background-color: #f7f2eb; /* soft white-cream */
+  color: #5d4037; /* warm brown */
+  padding: 24px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
 
-  .admin-sidebar button {
-    background: none;
-    border: none;
-    color: inherit;
-    font: inherit;
-    padding: 0;
-    cursor: pointer;
-    text-align: left;
-    width: 100%;
-  }
-  
-  .admin-sidebar button:hover {
-    text-decoration: underline;
-  }
+.sidebar-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3e2723;
+  font-weight: 600;
+}
 
-  .admin-about-quote {
-    margin-top: 100px;
-    padding: 15px;
-    font-style: italic;
-    color: #ddd;
-    background: rgba(255,255,255,0.05);
-    border-left: 4px solid #bb86fc;
-    border-radius: 6px;
-  }
+.admin-user-dropdown {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.admin-user-dropdown .avatar-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  border: 2px solid #a1887f;
+}
+
+.admin-user-dropdown .user-name {
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #5d4037;
+}
+
+.dropdown-menu {
+  background-color: #fffaf5;
+  border: 1px solid #e6ddd2;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #5d4037;
+  text-align: left;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.2s;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: #f0eae1;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.sidebar-menu li {
+  margin: 12px 0;
+}
+
+.sidebar-menu li a {
+  color: #5d4037;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.2s ease;
+}
+
+.sidebar-menu li a:hover {
+  color: #3e2723;
+}
+
+.admin-sidebar button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.admin-sidebar button:hover {
+  text-decoration: underline;
+}
+
+.admin-about-quote {
+  margin-top: auto;
+  padding: 15px;
+  font-style: italic;
+  color: #6d4c41;
+  background: #fffaf5;
+  border-left: 4px solid #a1887f;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}

@@ -1,27 +1,32 @@
+/* Layout */
 .author-dashboard {
   display: flex;
   min-height: 100vh;
-  background: linear-gradient(135deg, #2e003e, #001f4d);
+  background: #FAF9F7; /* Latar seperti kertas */
+  font-family: 'Inter', sans-serif;
+  color: #3E2723;
 }
 
 /* Sidebar */
 .author-sidebar {
-  width: 220px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  width: 260px;
+  padding: 32px 24px;
+  background: #4E342E; /* Coklat tua */
+  color: #FFFFFF;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.08);
 }
 
 .author-sidebar h3 {
-  color: #bb86fc;
-  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 32px;
 }
 
 .author-sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .author-sidebar li {
@@ -29,108 +34,91 @@
 }
 
 .author-sidebar a {
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 12px 18px;
   display: block;
   border-radius: 8px;
-  transition: background 0.3s;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.author-sidebar a:hover {
-  background: rgba(255, 255, 255, 0.1);
+.author-sidebar a:hover,
+.author-sidebar a.active {
+  background: #6D4C41; /* Coklat sedang */
+  color: #FFF8E1;
 }
 
-/* User Dropdown khusus di sidebar */
-.author-sidebar .user-dropdown {
-  margin-top: 30px;
-  cursor: pointer;
+/* User Dropdown */
+.author-dashboard .user-dropdown {
+  margin-top: 40px;
   text-align: center;
-  margin-bottom: 20px;
-}
-
-.author-sidebar .user-dropdown {
-  margin-top: 30px;
-  text-align: center;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.author-sidebar .avatar-img {
-  width: 60px;
-  height: 60px;
+.author-dashboard .avatar-img {
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  border: 2px solid #ffffff33;
 }
 
-.author-sidebar .user-name {
-  color: #fff;
+.author-dashboard .user-name {
+  color: #FFEBEE;
   font-weight: 600;
-  font-size: 14px;
-  margin: 0;
+  font-size: 16px;
 }
 
-
-.author-sidebar .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(135deg, #0f0c29cc, #302b63cc, #24243ecc);
-  backdrop-filter: blur(12px);
-  padding: 12px;
+/* Dropdown Menu */
+.author-dashboard .dropdown-menu {
+  background: #5D4037;
+  border: 1px solid #8D6E63;
   border-radius: 10px;
-  margin-top: 12px;
-  width: 160px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
-  z-index: 100;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: left; /* Biar teks rata kiri */
-}
-
-.author-sidebar .dropdown-item {
-  display: block;
-  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 200px;
   padding: 10px;
-  color: #ffffff;
-  text-align: left; /* Teks dropdown rata kiri */
-  text-decoration: none;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: background 0.2s, transform 0.2s;
-  font-weight: 500;
+  margin-top: 12px;
+  position: absolute;
+  z-index: 1000;
 }
 
-.author-sidebar .dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: scale(1.03);
+.author-dashboard .dropdown-item {
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #FFF3E0;
+  border-radius: 6px;
+  transition: background 0.2s;
 }
 
+.author-dashboard .dropdown-item:hover {
+  background: #8D6E63;
+}
 
 /* Main Content */
 .author-main-content {
   flex: 1;
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  color: #ffffff;
+  padding: 40px;
+  background: #FAF9F7;
+  color: #3E2723;
+}
+
+.author-main-content h1,
+.author-main-content h2 {
+  color: #3E2723;
+  margin-bottom: 24px;
 }
 
 .author-quote {
-  margin-top: auto;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-left: 4px solid #bb86fc;
+  background: #EFEBE9;
+  border-left: 4px solid #6D4C41;
+  padding: 16px 20px;
+  border-radius: 6px;
   font-style: italic;
-  font-size: 14px;
-  color: #ccc;
-  border-radius: 8px;
-  margin-bottom: 16px;
+  font-size: 15px;
+  color: #4E342E;
+  margin-top: 32px;
 }
-

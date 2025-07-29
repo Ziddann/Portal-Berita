@@ -1,6 +1,6 @@
 .profile-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-color: #FAF9F7; /* warna background warm minimal */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,15 +8,15 @@
 }
 
 .profile-container {
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
+  background-color: #FFFFFF;
   padding: 40px;
   border-radius: 16px;
   width: 100%;
   max-width: 500px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  color: #2F2F2F;
   box-sizing: border-box;
+  border: 1px solid #E6E1DC;
 }
 
 .profile-avatar {
@@ -26,7 +26,7 @@
   object-fit: cover;
   margin: 0 auto 20px;
   display: block;
-  border: 3px solid white;
+  border: 2px solid #8B5E3C;
 }
 
 .profile-content {
@@ -37,6 +37,7 @@
   text-align: center;
   margin-bottom: 2rem;
   font-size: 24px;
+  color: #4B3F2F;
 }
 
 form {
@@ -52,9 +53,9 @@ form {
 
 .form-group label {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 6px;
-  color: #ccc;
+  color: #6D5844;
   font-size: 14px;
 }
 
@@ -63,9 +64,9 @@ form {
   width: 100%;
   padding: 12px 14px;
   border-radius: 8px;
-  border: 1px solid #555;
-  background-color: rgba(255, 255, 255, 0.08);
-  color: white;
+  border: 1px solid #D6CCC2;
+  background-color: #FDFBF9;
+  color: #333;
   font-size: 14px;
   transition: border-color 0.2s ease;
   box-sizing: border-box;
@@ -73,14 +74,14 @@ form {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #6c63ff;
+  border-color: #8B5E3C;
   outline: none;
 }
 
 .profile-submit-button {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(to right, #6c63ff, #8e44ad);
+  background: linear-gradient(to right, #A47551, #8B5E3C);
   border: none;
   border-radius: 8px;
   color: white;
@@ -99,11 +100,11 @@ form {
   margin-top: 14px;
   padding: 10px 14px;
   border-radius: 8px;
-  background: rgba(255, 0, 0, 0.08);
-  border-left: 4px solid #ff4d4d;
-  color: #ff4d4d;
+  background: rgba(210, 40, 40, 0.08);
+  border-left: 4px solid #D62828;
+  color: #B00020;
   font-size: 14px;
   font-weight: 500;
-  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(210, 40, 40, 0.15);
   animation: fadeIn 0.3s ease-in-out;
 }

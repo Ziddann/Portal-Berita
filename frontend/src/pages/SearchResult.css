@@ -1,59 +1,67 @@
 .search-result-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    color: #fff;
-  }
-  
-  .search-result-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .search-result-card {
-    background: #1e1e2f; /* dark card */
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .search-result-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
-  }
-  
-  .result-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-  
-  .result-content {
-    padding: 14px;
-  }
-  
-  .result-category {
-    font-size: 12px;
-    font-weight: bold;
-    color: #f9b234; /* kategori kuning/oranye biar standout */
-  }
-  
-  .result-title {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 10px 0;
-    color: #ffffff;
-  }
-  
-  .result-footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #bbb;
-  }
-  
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: #3b2f2f; /* teks utama gelap hangat */
+  background-color: #fefae0; /* latar belakang warm */
+  font-family: 'Georgia', serif;
+}
+
+.search-result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.search-result-card {
+  background: #fdf6e3; /* card dengan nuansa kertas */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(150, 140, 120, 0.25); /* soft brown shadow */
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e6dec7;
+}
+
+.search-result-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(140, 130, 100, 0.4);
+}
+
+.result-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eae2c8;
+}
+
+.result-content {
+  padding: 14px;
+}
+
+.result-category {
+  font-size: 12px;
+  font-weight: bold;
+  color: #8d5a20; /* warm brown */
+  background-color: #f9e0a4;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.result-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #3b2f2f; /* judul hangat gelap */
+}
+
+.result-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #6e6250; /* abu kecoklatan */
+}

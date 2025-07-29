@@ -1,67 +1,79 @@
 .my-articles {
-    margin-top: 20px;
-  }
-  
-  .my-articles h2 {
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  
-  /* Table styling */
-  .my-articles table {
-    width: 100%;
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(6px);
-    border-radius: 10px;
-    overflow: hidden;
-    color: #ffffff;
-  }
-  
-  .my-articles th,
-  .my-articles td {
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 12px;
-    text-align: left;
-  }
-  
-  .my-articles th {
-    background: rgba(138, 43, 226, 0.3); /* ungu biru transparan */
-    color: #ffffff;
-    font-weight: 600;
-  }
-  
-  .my-articles td {
-    color: #e0e0e0;
-  }
-  
-  /* Action Buttons */
-  .my-articles button {
-    margin-right: 8px;
-    padding: 6px 12px;
-    background: linear-gradient(135deg, #7b2ff7, #4c00b4);
-    border: none;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: transform 0.2s ease, background 0.3s ease;
-    font-size: 14px;
-  }
-  
-  .my-articles button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #9b4dff, #5d00db);
-  }
-  
-  .my-articles em {
-    font-style: italic;
-    color: #cccccc;
-    font-size: 14px;
-  }
-  
-  .rejected-info {
-    color: #ff4d4d;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
+  margin-top: 20px;
+  padding: 24px;
+  background-color: #fefaf5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(117, 74, 28, 0.1);
+}
+
+.my-articles h2 {
+  color: #5c3a21;
+  margin-bottom: 20px;
+  font-size: 22px;
+  border-left: 4px solid #c7a17a;
+  padding-left: 12px;
+}
+
+/* Table styling */
+.my-articles table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdf9;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #4b3828;
+  font-size: 14px;
+}
+
+.my-articles th,
+.my-articles td {
+  border: 1px solid #e5dacb;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.my-articles th {
+  background: #f4e3d6;
+  color: #3e2f1c;
+  font-weight: 600;
+}
+
+.my-articles td {
+  color: #5a4732;
+}
+
+.my-articles tr:hover {
+  background-color: #fef4e8;
+}
+
+/* Buttons */
+.my-articles button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #c7a17a, #a86c42);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(168, 108, 66, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.my-articles button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 108, 66, 0.4);
+}
+
+.my-articles em {
+  font-style: italic;
+  color: #a58a73;
+  font-size: 13px;
+}
+
+.rejected-info {
+  color: #d25b4c;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}

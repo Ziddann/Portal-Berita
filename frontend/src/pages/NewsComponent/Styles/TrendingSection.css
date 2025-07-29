@@ -5,7 +5,8 @@
   margin: 20px auto;
   max-width: 1200px;
   gap: 20px;
-  color: white;
+  color: #4B3E2D;
+  background-color: transparent;
 }
 
 /* Section Headline Besar */
@@ -25,12 +26,12 @@
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(130, 100, 60, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
 .highlight-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .highlight-content {
@@ -38,17 +39,17 @@
   bottom: 20px;
   left: 20px;
   right: 20px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(6px);
+  color: #4B3E2D;
+  background-color: rgba(255, 248, 231, 0.8); /* seperti kertas */
+  backdrop-filter: blur(4px);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 16px rgba(130, 100, 60, 0.25);
 }
 
 .highlight-badge {
-  background-color: #ff4747;
-  color: white;
+  background-color: #C89B6D;
+  color: #fff;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
@@ -59,20 +60,20 @@
   font-size: 24px;
   font-weight: bold;
   margin-top: 10px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  color: #3E2F20;
+  text-shadow: 1px 1px 4px rgba(200, 180, 150, 0.5);
 }
 
 .highlight-desc {
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  color: #5A4A38;
 }
 
 .highlight-date {
   font-size: 14px;
-  color: #ccc;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  color: #8C775B;
 }
 
 /* Side list berisi artikel-artikel trending */
@@ -86,32 +87,32 @@
 .side-item {
   display: flex;
   text-decoration: none;
-  color: white;
+  color: #4B3E2D;
   gap: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: linear-gradient(135deg, rgba(51, 51, 77, 0.9), rgba(40, 40, 60, 0.9));
+  background: #FFF9E9;
   border-radius: 12px;
   padding: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(100, 85, 55, 0.15);
+  border: 1px solid #E5D3B3;
 }
 
 .side-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 20px rgba(100, 85, 55, 0.2);
 }
 
 .side-title {
   font-size: 15px;
   font-weight: 600;
-  color: white;
+  color: #3E2F20;
   margin-bottom: 6px;
   line-height: 1.4;
 }
 
 .side-date {
   font-size: 13px;
-  color: #ccc;
+  color: #937B5E;
 }
 
 .side-thumb {
@@ -128,7 +129,6 @@
   object-fit: cover;
   display: block;
 }
-
 
 /* Responsif untuk tampilan mobile */
 @media (max-width: 768px) {
