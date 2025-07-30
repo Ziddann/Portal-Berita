@@ -36,7 +36,7 @@
 
 ---
 
-## 📁 Struktur Proyek (diasumsikan)
+## 📁 Struktur Proyek 
 
 briefly-portal/
 ├── backend/
