@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const pool = require('../db'); // Koneksi database
+const BASE_URL = process.env.BASE_URL || 'http://localhost:5000';
 
 // Tambah Komentar
 router.post('/comments', async (req, res) => {
@@ -61,8 +62,8 @@ router.get('/comments/:newsId', async (req, res) => {
       id: Number(c.id),
       parentId: c.parentId !== null ? Number(c.parentId) : null,
       profileImage: c.profileImage
-        ? `http://localhost:5000/uploads/${c.profileImage}`
-        : '/default-avatar.png'
+      ? `${BASE_URL}/uploads/${c.profileImage}`
+      : '/default-avatar.png'
     }));
 
     res.json(comments);

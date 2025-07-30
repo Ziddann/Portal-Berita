@@ -174,7 +174,7 @@ router.get('/news/category/:category', async (req, res) => {
 // Record View
 router.post('/news/:id/view', async (req, res) => {
   const newsId = req.params.id;
-  const { userId } = req.body;
+  const { userId } = req.body; 
 
   if (!userId) return res.status(400).json({ message: 'User ID required' });
   if (isNaN(newsId)) return res.status(400).json({ message: 'Invalid news ID' });
