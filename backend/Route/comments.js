@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const pool = require('../db'); // Koneksi database
-const BASE_URL = process.env.BASE_URL || 'http://localhost:5000';
 
 // Tambah Komentar
 router.post('/comments', async (req, res) => {
