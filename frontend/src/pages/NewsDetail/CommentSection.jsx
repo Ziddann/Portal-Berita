@@ -30,12 +30,19 @@ function CommentSection({ newsId, userId }) {
       const data = res.data;
       const main = data.filter(c => c.parentId === null);
       const map = {};
+      
+      // Update semua komentar untuk perbaiki URL image
       data.forEach(c => {
+        c.profileImage = c.profileImage
+          ? `${config.API_BASE_URL}${c.profileImage}`
+          : `${config.API_BASE_URL}/default-avatar.jpg`;
+      
         if (c.parentId !== null) {
           if (!map[c.parentId]) map[c.parentId] = [];
           map[c.parentId].push(c);
         }
       });
+      
       setComments(main);
       setRepliesMap(map);
     } catch (err) {

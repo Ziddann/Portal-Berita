@@ -62,7 +62,7 @@ router.get('/comments/:newsId', async (req, res) => {
       id: Number(c.id),
       parentId: c.parentId !== null ? Number(c.parentId) : null,
       profileImage: c.profileImage
-      ? `${BASE_URL}/uploads/${c.profileImage}`
+      ? `/uploads/${c.profileImage}`
       : '/default-avatar.png'
     }));
 
