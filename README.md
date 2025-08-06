@@ -52,8 +52,7 @@ briefly-portal/
 ---
 
 ## ⚙️ Menjalankan Proyek (Backend)
-
-1. Clone repo ini:
+1.  Clone repo ini:
    ```
    git clone https://github.com/Ziddann/Portal-Berita.git
    cd briefly-portal/backend
@@ -115,10 +114,46 @@ nodemon server.js / node server.js
 
 ---
 
+🗃️ Menyiapkan Database (brieflynews_db.sql)
+1. Buat Database Baru
+Masuk ke MySQL menggunakan terminal, phpMyAdmin, atau tools lain (seperti DBeaver), lalu jalankan perintah ini:
+
+```
+CREATE DATABASE brieflynews;
+```
+
+2. Import File SQL
+Setelah database dibuat, import file brieflynews_db.sql yang sudah kamu punya:
+
+💻 Jika pakai terminal:
+```
+mysql -u root -p brieflynews < brieflynews_db.sql
+```
+
+📦 Jika pakai phpMyAdmin:
+
+Buka phpMyAdmin → pilih database brieflynews
+
+Klik tab "Import"
+
+Pilih file brieflynews_db.sql
+
+Klik "Go"
+
+3. Update File .env (Backend)
+Pastikan isi file .env kamu di folder backend seperti ini:
+
+```
+PORT=5000
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=
+DB_NAME=brieflynews
+```
 
 🌐 Deployment
 Platform	Deskripsi
-Railway	✅ Backend deployed
+Railway	✅ Backend + MySql deployed
 Vercel	✅ Frontend deployed
 
 👨‍💻 Developer
