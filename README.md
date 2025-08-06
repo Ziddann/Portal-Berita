@@ -13,9 +13,7 @@
 - 📊 Dashboard Admin: Statistik & data pengguna
 - 💬 Komentar pengguna
 - 📌 Bookmark berita favorit
-- 🔔 Notifikasi berita baru (Live via Pusher)
-- 🌐 Dukungan Multibahasa
-- 📱 Tampilan Responsif (Tailwind CSS)
+- 📱 Tampilan Responsif
 
 ---
 
@@ -28,9 +26,8 @@
 - **Multer** (Upload gambar)
 - **bcryptjs**, **dotenv**, **cors**
 
-### Frontend (planned)
+### 🎨 Frontend
 - **React.js**
-- **Tailwind CSS**
 - **React Router DOM**
 - **Axios**
 
@@ -42,54 +39,81 @@ briefly-portal/
 ├── backend/
 │ ├── server.js
 │ ├── routes/
-│ ├── controllers/
-│ ├── models/
-│ ├── middlewares/
 │ └── uploads/
-├── frontend/ (dalam pengembangan)
+├── frontend/
+│ ├── public/
 │ ├── src/
-│ └── ...
+│ │ ├── components/
+│ │ ├── pages/
+│ │ └── main.jsx
+│ └── .env
 └── README.md
-
-yaml
-Copy
-Edit
 
 ---
 
 ## ⚙️ Menjalankan Proyek (Backend)
 
 1. Clone repo ini:
-   ```bash
    git clone https://github.com/Ziddann/Portal-Berita.git
    cd briefly-portal/backend
+   
 Install dependensi:
-
-bash
-Copy
-Edit
 npm install
+
 Buat file .env dan isi seperti ini:
 
-ini
-Copy
-Edit
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
-DB_PASS=yourpassword
+DB_PASS=
 DB_NAME=portal_berita
-JWT_SECRET=secret123
-Jalankan server:
 
-bash
-Copy
-Edit
-npm run dev
+
+Jalankan server:
+nodemon server.js / node server.js
+
+
+---
+
+## ⚙️ Menjalankan Proyek (Frontend)
+
+1. Pindah ke direktori frontend:
+
+   ```
+   cd briefly-portal/frontend
+   ```
+
+2. Install dependensi:
+
+   ```
+   npm install
+   ```
+
+3. Buat file `.env` dan isi seperti ini:
+
+   ```env
+   VITE_API_URL=http://localhost:5000/api
+   ```
+
+4. Jalankan aplikasi:
+
+   ```
+   npm run dev
+   ```
+
+5. Akses frontend di browser:
+
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+
 🌐 Deployment
 Platform	Deskripsi
 Railway	✅ Backend deployed
-Vercel	🔜 Frontend (on progress)
+Vercel	✅ Frontend deployed
 
 👨‍💻 Developer
 Proyek ini dikembangkan oleh:
@@ -100,8 +124,3 @@ Fullstack Web Developer Intern
 🏢 PT. Winnicode Garuda Teknologi
 🔗 github.com/Ziddann
 
-📄 Lisensi
-MIT License © 2025 Ziddan Fadillah
-
-📌 Catatan Tambahan
-Briefly Portal masih dalam tahap pengembangan frontend. Fitur backend telah mencakup otorisasi pengguna, pengelolaan berita, serta sistem komentar dan bookmark. Frontend akan dibangun menggunakan React dan Tailwind agar responsif dan user-friendly.
