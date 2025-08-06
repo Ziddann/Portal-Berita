@@ -54,24 +54,30 @@ briefly-portal/
 ## ⚙️ Menjalankan Proyek (Backend)
 
 1. Clone repo ini:
+   ```
    git clone https://github.com/Ziddann/Portal-Berita.git
    cd briefly-portal/backend
+   ```
    
 Install dependensi:
+```
 npm install
+```
 
 Buat file .env dan isi seperti ini:
 
+```
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=
 DB_NAME=portal_berita
-
+```
 
 Jalankan server:
+```
 nodemon server.js / node server.js
-
+```
 
 ---
 
